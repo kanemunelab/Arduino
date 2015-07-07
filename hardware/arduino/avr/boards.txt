@@ -815,3 +815,33 @@ gemma.build.board=AVR_GEMMA
 gemma.upload.tool=avrdude
 gemma.upload.maximum_size=5310
 
+##############################################################
+
+proo.name=Studuino (3.3V, 8 MHz) w/ ATmega168
+
+proo.upload.tool=avrdude
+proo.upload.protocol=arduino
+
+proo.bootloader.tool=avrdude
+proo.bootloader.unlock_bits=0x3F
+proo.bootloader.lock_bits=0x0F
+
+proo.build.board=AVR_PRO
+proo.build.core=arduino
+proo.build.variant=standard
+proo.build.core=arduino:arduino
+proo.build.variant=arduino:standard
+
+proo.upload.maximum_size=15872
+pro.menu.cpu.8MHzatmega168.upload.maximum_data_size=1024
+proo.upload.speed=115200
+
+proo.bootloader.low_fuses=0xc6
+proo.bootloader.high_fuses=0xdd
+proo.bootloader.extended_fuses=0x02
+proo.bootloader.path=optiboot
+proo.bootloader.file=optiboot_pro_8MHz.hex
+
+proo.build.mcu=atmega168
+proo.build.f_cpu=8000000L
+
